@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        // 装饰器现在还是试验阶段，开启这个屏蔽警告
+        "experimentalDecorators": true,
+        "allowJs": true
+    }
+  }

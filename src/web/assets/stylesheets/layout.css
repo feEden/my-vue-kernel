@@ -1,0 +1,55 @@
+:root{
+    --mainColor:#409EFF;
+    --successColor:#67C23A;
+    --warningColor:#E6A23C;
+    --dangerColor:#F56C6C;
+    --infoColor:#909399;
+    --bgColor:#F2F6FC;
+    --otherColor:#fff;
+    --mainTextColor:#303133;
+    --normalTextColor:#606266;
+    --subTextColor:#909399;
+    --otherTextColor:#fff;
+    --lgFSize:1rem;
+    --mdFSize:0.8rem;
+    --smFSize:0.7rem;
+    --otherFSize:0.6rem;
+    --blgHeight:2.5rem;
+    --lgHeight:2rem;
+    --mdHeight:1.8rem;
+    --smHeight:1.2rem;
+    --otherHeight:1.4rem;
+}
+
+html {
+    font-size: 125% !important;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,body{
+    height: 100%;
+    background-color: var(--bgColor);
+    color: var(--mainTextColor);
+    font-size: var(--smFSize);
+    overflow: hidden;
+}
+#app{
+    height:100%;
+    overflow: hidden;
+}
+a:any-link{
+    color: var(--mainTextColor);
+}
+a{
+    color: var(--mainTextColor);
+}
+a:hover{
+    color: var(--mainColor);
+}
