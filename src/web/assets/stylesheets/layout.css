@@ -1,30 +1,98 @@
-:root{
-    --mainColor:#409EFF;
-    --successColor:#67C23A;
-    --warningColor:#E6A23C;
-    --dangerColor:#F56C6C;
-    --infoColor:#909399;
-    --bgColor:#F2F6FC;
-    --otherColor:#fff;
-    --mainTextColor:#303133;
-    --normalTextColor:#606266;
-    --subTextColor:#909399;
-    --otherTextColor:#fff;
-    --lgFSize:1rem;
-    --mdFSize:0.8rem;
-    --smFSize:0.7rem;
-    --otherFSize:0.6rem;
-    --blgHeight:2.5rem;
-    --lgHeight:2rem;
-    --mdHeight:1.8rem;
-    --smHeight:1.2rem;
-    --otherHeight:1.4rem;
+:root {
+    --mainColor: #409EFF;
+    --successColor: #67C23A;
+    --warningColor: #E6A23C;
+    --dangerColor: #F56C6C;
+    --infoColor: #909399;
+    --bgColor: #F2F6FC;
+    --navBgColor:#3b3f4f;
+    --otherColor: #fff;
+    --mainTextColor: #303133;
+    --normalTextColor: #606266;
+    --subTextColor: #909399;
+    --otherTextColor: #fff;
+    --lgFSize: 1rem;
+    --mdFSize: 0.8rem;
+    --smFSize: 0.7rem;
+    --otherFSize: 0.6rem;
+    --blgHeight: 2.5rem;
+    --lgHeight: 2rem;
+    --mdHeight: 1.8rem;
+    --smHeight: 1.2rem;
+    --otherHeight: 1.4rem;
 }
 
 html {
+    /* 1rem = 20px */
     font-size: 125% !important;
     box-sizing: border-box;
-    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+
+/* 自定义媒体查询 */
+
+@custom-media --modile-viewport (max-width: 768px);
+@custom-media --pad-viewport (width > 768) and (width <=992px);
+@custom-media --middle-viewport (width > 992) and (width <=1200px);
+
+/*手机viewport  */
+
+@media (--modile-viewport) {
+    html {
+        font-size: 100% !important;
+    }
+    .layout__header-wrap {
+        grid-template-areas: "logo function collapse"
+                             "hidden hidden hidden"   
+    }
+    .layout__header-function {
+        grid-area: hidden !important;
+        position: relative;
+        justify-content: space-evenly !important;
+        height: 2.5rem;
+        background-color: #3b3f4f;
+        margin-right: 0 !important;
+    }
+    .login-wrap{
+        position: relative;
+        & .login__bg-img{
+            position:absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+        }
+        & .login__form{
+            border-radius:10px;
+            background-color:#445662 !important; 
+            padding:0 5% 5% 5% !important;
+            position: absolute;
+            left:10%;
+            top:30%;
+            & .login__form-title{
+                color:var(--otherColor)
+            }
+        }
+    }
+}
+
+
+/* 平板viewport */
+
+@media (--pad-viewport) {
+    html {
+        font-size: 100% !important;
+    }
+}
+
+
+/* 中等屏幕viewport)*/
+
+@media (--middle-viewport) {
+    html {
+        font-size: 100% !important;
+    }
 }
 
 *,
@@ -33,23 +101,28 @@ html {
     box-sizing: inherit;
 }
 
-html,body{
+html,
+body {
     height: 100%;
     background-color: var(--bgColor);
     color: var(--mainTextColor);
     font-size: var(--smFSize);
     overflow: hidden;
 }
-#app{
-    height:100%;
+
+#app {
+    height: 100%;
     overflow: hidden;
 }
-a:any-link{
+
+a:any-link {
     color: var(--mainTextColor);
 }
-a{
+
+a {
     color: var(--mainTextColor);
 }
-a:hover{
+
+a:hover {
     color: var(--mainColor);
 }

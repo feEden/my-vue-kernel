@@ -1,9 +1,9 @@
 <template>
-    <span>
+    <div class="icon-wrap">
         <svg class="icon" aria-hidden="true">
             <use :xlink:href="getIconName"></use>
         </svg>
-    </span>
+    </div>
 </template>
 <script>
 /**
@@ -27,6 +27,11 @@ export default {
 };
 </script>
 <style scoped>
+    .icon-wrap{
+        height: 2.5rem;
+        width: 2.5rem;
+        display: inline-block;
+    }
     .icon {
         width: 1.5rem;
         height: 1.5rem;

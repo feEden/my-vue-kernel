@@ -41,7 +41,7 @@ const router = new VueRouter({
                 {
                     /* 导出excell */
                     path: "/charting/export-csv",
-                    name: "csvexport",
+                    name: "charting-csvexport",
                     component: resolve => require(["../views/charting/csv-export.vue"], resolve),
                     meta: {
                         keepAlive: true,
@@ -51,7 +51,7 @@ const router = new VueRouter({
                 {
                     /* 自定义报表 */
                     path: "/charting/custom-report",
-                    name: "suctopmreport",
+                    name: "charting-suctopmreport",
                     component: resolve => require(["../views/charting/custom-report.vue"], resolve),
                     meta: {
                         keepAlive: true,
@@ -61,7 +61,7 @@ const router = new VueRouter({
                 {
                     /* 轮换报表 */
                     path: "/charting/shift-report",
-                    name: "shiftreport",
+                    name: "charting-shiftreport",
                     component: resolve => require(["../views/charting/shift-report.vue"], resolve),
                     meta: {
                         keepAlive: true,
@@ -71,7 +71,7 @@ const router = new VueRouter({
                 {
                     /* 全局设置 */
                     path: "/machine/global-setting",
-                    name: "globalsetting",
+                    name: "charting-globalsetting",
                     component: resolve => require(["../views/machine/global-setting.vue"], resolve),
                     meta: {
                         keepAlive: true,
@@ -81,7 +81,7 @@ const router = new VueRouter({
                 {
                     /* kpi配置 */
                     path: "/machine/kpi-builder",
-                    name: "kpibuilder",
+                    name: "machine-kpibuilder",
                     component: resolve => require(["../views/machine/kpi-builder.vue"], resolve),
                     meta: {
                         keepAlive: true,
@@ -91,7 +91,7 @@ const router = new VueRouter({
                 {
                     /* 机器设备管理 */
                     path: "/machine/manage-machine",
-                    name: "managemachine",
+                    name: "machine-managemachine",
                     component: resolve => require(["../views/machine/manage-machine.vue"], resolve),
                     meta: {
                         keepAlive: true,
@@ -101,7 +101,7 @@ const router = new VueRouter({
                 {
                     /* shift管理 */
                     path: "/machine/manage-shift",
-                    name: "manageshift",
+                    name: "machine-manageshift",
                     component: resolve => require(["../views/machine/manage-shift.vue"], resolve),
                     meta: {
                         keepAlive: true,
@@ -111,7 +111,7 @@ const router = new VueRouter({
                 {
                     /*  */
                     path: "/summaries",
-                    name: "summaries",
+                    name: "machine-summaries",
                     component: resolve => require(["../views/summaries/index.vue"], resolve),
                     meta: {
                         keepAlive: true,
@@ -121,7 +121,7 @@ const router = new VueRouter({
                 {
                     /* 技术支持 */
                     path: "/support",
-                    name: "support",
+                    name: "machine-support",
                     component: resolve => require(["../views/support/index.vue"], resolve),
                     meta: {
                         keepAlive: true,

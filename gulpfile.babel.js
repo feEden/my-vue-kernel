@@ -49,7 +49,6 @@ function buildConfig() {
     return gulp.src(entry)
         .pipe(rollup({
             plugins: [
-                resolve(),
                 replace({
                     // 清除当前环境下不使用的变量 
                     "process.env.NODE_ENV": JSON.stringify('production')

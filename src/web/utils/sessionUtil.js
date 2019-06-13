@@ -1,3 +1,5 @@
+import ELEMENT from "element-ui";
+
 /* sessionStorage 方法集合 */
 //设置session
 export function setItem(key, value){

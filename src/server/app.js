@@ -55,7 +55,7 @@ app.use(serve(buildDir));
 // 开发环境下，node帮忙执行webpack
 if (!isProd) {
     const koaWebpack = require("koa-webpack");
-    const webpackConfig = require("../webpack.base.js");
+    const webpackConfig = require("../webpack.config.js");
     // 将vue打包到内存中，保证了热更新功能
     koaWebpack({
         config: webpackConfig,

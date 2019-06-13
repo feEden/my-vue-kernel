@@ -9,22 +9,23 @@
     </div>
 </template>
 <script>
-    import nhdHeader from "./header";
+import nhdHeader from "./header";
 
-    export default {
-        components:{
-            nhdHeader
-        }
+export default {
+    components: {
+        nhdHeader
     }
+};
 </script>
 <style scoped>
-.layout-wrap{
+.layout-wrap {
     height: inherit;
     overflow: hidden;
 }
-    .layout__main{
-        padding: 10px;
-        overflow: hidden;
-        overflow-y: auto;
-    }
+.layout__main {
+    height: inherit;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: auto;
+}
 </style>

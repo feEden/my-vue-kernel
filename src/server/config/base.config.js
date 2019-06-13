@@ -1,4 +1,4 @@
-import { join } from "path";
+const { join } = require("path");
 
 const config = {
     buildDir: join(__dirname, "../", "webapp")
