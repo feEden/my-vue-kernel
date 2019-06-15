@@ -1,2 +1,2 @@
 #! /bin/bash
-pm2 start dist/app.js
+pm2 start pm2.config.js
