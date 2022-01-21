@@ -23,7 +23,7 @@
         "koa-bodyparser": "^4.2.1",
         "koa-static": "^5.0.0",
         "koa2-history-api-fallback": "^0.1.0",
-        "log4js": "^4.3.0",
+        "log4js": "^6.4.0",
         "vuex-persistedstate": "^2.5.4",
         "scripty": "^1.9.1"
     },
